@@ -11,7 +11,7 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu" id="navbar-menu" :class="{'is-active': showMobileMenu}">
+      <div class="navbar-menu" id="navbar-menu" :class="{'is-active': showMobileMenu }">
         <div class="navbar-end">
           <div class="navbar-end">
             <router-link to="/summer" class="navbar-item">Summer</router-link>
@@ -45,7 +45,9 @@ export default {
   data() {
     return {
       showMobileMenu: false,
+
     }
   }
 }
+
 </script>
