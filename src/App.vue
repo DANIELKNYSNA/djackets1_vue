@@ -29,8 +29,8 @@
         </div>
       </div>
     </nav>
-    <div class="is-loading-bar has-text-centered" :class="{'is-loading': $store.state.isLoading}">
-      <div class="ids-dual-ring"></div>
+    <div class="is-loading-bar has-text-centered" v-bind:class="{'is-loading': $store.state.isLoading }">
+      <div class="lds-dual-ring"></div>
     </div>
     <section class="section">
       <router-view />
@@ -78,7 +78,7 @@ export default {
   height: 80px;
 }
 
-.ids-dual-ring:after {
+.lds-dual-ring:after {
   content: " ";
   display: block;
   width: 64px;
@@ -103,7 +103,6 @@ export default {
 .is-loading-bar {
   height: 0;
   overflow: hidden;
-
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 
