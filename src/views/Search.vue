@@ -17,7 +17,6 @@ export default {
   name: 'Search',
   components: {
     ProductBox,
-    ProductBox
   },
   data() {
     return {
