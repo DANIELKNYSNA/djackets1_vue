@@ -6,21 +6,29 @@
         <form @submit.prevent="submitForm">
           <div class="field">
             <label for="">Username</label>
-            <input type="text" class="input" v-model="username">
+            <div class="control">
+              <input type="text" class="input" v-model="username">
+            </div>
           </div>
           <div class="field">
             <label for="">Password</label>
-            <input type="password" class="input" v-model="password">
+            <div class="control">
+              <input type="password" class="input" v-model="password">
+            </div>
           </div>
           <div class="field">
             <label for="">Repeat Password</label>
-            <input type="password" class="input" v-model="password2">
+            <div class="control">
+              <input type="password" class="input" v-model="password2">
+            </div>
           </div>
           <div class="notification is-danger" v-if="errors.length">
             <p v-for="error in errors" :key="error">{{error}}</p>
           </div>
           <div class="field">
-            <button class="button is-dark">Sign up</button>
+            <div class="control">
+              <button class="button is-dark">Sign up</button>
+            </div>
           </div>
           <hr>
           Or <router-link to="/log-in">click here</router-link> to log in!
