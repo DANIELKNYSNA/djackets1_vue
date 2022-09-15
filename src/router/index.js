@@ -9,6 +9,7 @@ import LogIn from '../views/LogIn.vue'
 import MyAccount from '../views/MyAccount.vue'
 import Checkout from '../views/Checkout.vue'
 import store from '../store'
+import Success from '../views/Success.vue'
 const routes = [{
         path: '/',
         name: 'home',
@@ -69,7 +70,15 @@ const routes = [{
         meta: {
             requireLogin: true
         }
-    }
+    },
+    {
+        path: '/success',
+        name: 'Success',
+        component: Success,
+        meta: {
+            requireLogin: true
+        }
+    },
 ]
 
 const router = createRouter({
