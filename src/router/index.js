@@ -72,7 +72,7 @@ const routes = [{
         }
     },
     {
-        path: '/success',
+        path: '/cart/success',
         name: 'Success',
         component: Success,
         meta: {
